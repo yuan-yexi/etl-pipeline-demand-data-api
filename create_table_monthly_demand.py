@@ -35,4 +35,4 @@ create_table_monthly_demand = """
     );
     """
 
-cursor.execute(create_table_monthly_demand)
+cursor.execute(create_table_monthly_demand, multi=True)
