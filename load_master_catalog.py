@@ -30,7 +30,7 @@ insert_into_table = """
         """
 
 # Open and load CSV into master_catalog table
-with open('./data/master_catalog.csv') as master_catalog_csv:
+with open('./data/master_catalog.csv', encoding='utf-8') as master_catalog_csv:
     reader = csv.DictReader(master_catalog_csv)
     for row in reader:
         value = (f"{row['title']}",

@@ -51,4 +51,6 @@ create_table_master_catalog = """
     );
     """
 
-cursor.execute(create_table_master_catalog)
+cursor.execute(create_table_master_catalog, multi=True)
+cursor.close()
+print("Done")
